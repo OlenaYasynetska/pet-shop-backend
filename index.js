@@ -1,10 +1,10 @@
-const startSever = require("./server");
+const startServer = require("./server");
 const connectDatabase = require("./database/connectDatabase");
 
 const start = async () => {
   try {
     await connectDatabase();
-    startSever();
+    startServer();
     
   } catch (err) {
     console.log(err);
